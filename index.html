@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="PK Heritage Jewellery - Exquisite collection of luxury jewellery including necklaces, rings, earrings, and bracelets">
+    <title>PK Heritage Jewellery - Luxury Jewellery Collection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Cormorant+Garamond:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">✦</span>
+                PK Heritage
+                <span class="logo-icon">✦</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active" data-slide="0">Home</a></li>
+                <li><a href="#necklaces" class="nav-link" data-slide="1">Necklaces</a></li>
+                <li><a href="#rings" class="nav-link" data-slide="2">Rings</a></li>
+                <li><a href="#earrings" class="nav-link" data-slide="3">Earrings</a></li>
+                <li><a href="#bracelets" class="nav-link" data-slide="4">Bracelets</a></li>
+                <li><a href="#custom" class="nav-link" data-slide="5">Custom</a></li>
+                <li><a href="#contact" class="nav-link" data-slide="6">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Slide Navigation Indicators -->
+    <div class="slide-indicators" id="slideIndicators">
+        <span class="indicator active" data-slide="0"></span>
+        <span class="indicator" data-slide="1"></span>
+        <span class="indicator" data-slide="2"></span>
+        <span class="indicator" data-slide="3"></span>
+        <span class="indicator" data-slide="4"></span>
+        <span class="indicator" data-slide="5"></span>
+        <span class="indicator" data-slide="6"></span>
+    </div>
+
+    <!-- Main Container -->
+    <div class="slides-container" id="slidesContainer">
+
+        <!-- ============ Slide 1: Hero/Home ============ -->
+        <section class="slide" id="home">
+            <div class="hero-bg-pattern"></div>
+            <div class="slide-content hero-slide-content">
+                <div class="hero-content fade-in">
+                    <div class="hero-diamond">◆</div>
+                    <h1 class="hero-title">PK Heritage<br>Jewellery</h1>
+                    <div class="hero-divider">
+                        <span></span>
+                        <span class="divider-icon">✦</span>
+                        <span></span>
+                    </div>
+                    <p class="hero-subtitle">Timeless Elegance, Crafted to Perfection</p>
+                    <p class="hero-description">Discover our exquisite collection of handcrafted luxury jewellery, where
+                        every piece tells a story of heritage and artistry.</p>
+                    <div class="hero-buttons">
+                        <button class="cta-button primary" onclick="scrollToSlide(1)">
+                            <span>Explore Collection</span>
+                        </button>
+                        <button class="cta-button secondary" onclick="openOrderModal('Custom Jewellery')">
+                            <span>Custom Order</span>
+                        </button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Designs</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-number">25+</span>
+                            <span class="stat-label">Years</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-number">10K+</span>
+                            <span class="stat-label">Clients</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-overlay"></div>
+        </section>
+
+        <!-- ============ Slide 2: Necklaces ============ -->
+        <section class="slide" id="necklaces">
+            <div class="slide-content">
+                <div class="section-header">
+                    <span class="section-number fade-in">01</span>
+                    <h2 class="section-title fade-in">Necklaces Collection</h2>
+                    <div class="section-divider fade-in">
+                        <span></span><span class="divider-icon">✦</span><span></span>
+                    </div>
+                    <p class="section-subtitle fade-in">Elegant designs that grace your neckline with unmatched
+                        brilliance</p>
+                </div>
+                <div class="jewellery-grid">
+                    <div class="jewellery-item fade-in" data-delay="0">
+                        <div class="item-image" style="--accent: #E8D5B7;">
+                            <img src="assets/necklaces/necklace-1.png" alt="Diamond Necklace" class="product-img" loading="lazy">
+                            <div class="item-overlay">
+                                <button class="order-btn" onclick="openOrderModal('Diamond Necklace')">Order
+                                    Now</button>
+                            </div>
+                        </div>
+                        <h3 class="item-title">Diamond Necklace</h3>
+                        <p class="item-price">From $2,499</p>
+                        <p class="item-description">Brilliant cut diamonds set in platinum</p>
+                    </div>
+                    <div class="jewellery-item fade-in" data-delay="1">
+                        <div class="item-image" style="--accent: #FFD700;">
+                            <img src="assets/necklaces/necklace-2.png" alt="Gold Chain" class="product-img" loading="lazy">
+                            <div class="item-overlay">
+                                <button class="order-btn" onclick="openOrderModal('Gold Chain Necklace')">Order
+                                    Now</button>
+                            </div>
+                        </div>
+                        <h3 class="item-title">Gold Chain</h3>
+                        <p class="item-price">From $1,299</p>
+                        <p class="item-description">18K yellow gold classic design</p>
+                    </div>
+                    <div class="jewellery-item fade-in" data-delay="2">
+                        <div class="item-image" style="--accent: #F5F0E8;">
+                            <img src="assets/necklaces/necklace-3.png" alt="Pearl Strand" class="product-img" loading="lazy">
+                            <div class="item-overlay">
+                                <button class="order-btn" onclick="openOrderModal('Pearl Strand Necklace')">Order
+                                    Now</button>
+                            </div>
+                        </div>
+                        <h3 class="item-title">Pearl Strand</h3>
+                        <p class="item-price">From $1,899</p>
+                        <p class="item-description">Lustrous South Sea pearls</p>
+                    </div>
+                    <div class="jewellery-item fade-in" data-delay="3">
+                        <div class="item-image" style="--accent: #50C878;">
+                            <img src="assets/necklaces/necklace-4.png" alt="Emerald Pendant" class="product-img" loading="lazy">
+                            <div class="item-overlay">
+                                <button class="order-btn" onclick="openOrderModal('Emerald Pendant Necklace')">Order
+                                    Now</button>
+                            </div>
+                        </div>
+                        <h3 class="item-title">Emerald Pendant</h3>
+                        <p class="item-price">From $3,299</p>
+                        <p class="item-description">Natural emerald with gold setting</p>
+                    </div>
+                    <div class="jewellery-item fade-in" data-delay="4">
+                        <div class="item-image" style="--accent: #E0115F;">
+                            <img src="assets/necklaces/necklace-5.png" alt="Ruby Statement" class="product-img" loading="lazy">
+                            <div class="item-overlay">
+                                <button class="order-btn" onclick="openOrderModal('Ruby Statement Necklace')">Order
+                                    Now</button>
+                            </div>
+                        </div>
+                        <h3 class="item-title">Ruby Statement</h3>
+                        <p class="item-price">From $4,599</p>
+                        <p class="item-description">Bold ruby with diamond accents</p>
+                    </div>
+                    <div class="jewellery-item fade-in" data-delay="5">
+                        <div class="item-image" style="--accent: #B9F2FF;">
+                            <img src="assets/necklaces/necklace-6.png" alt="Diamond Pendant" class="product-img" loading="lazy">
+                            <div class="item-overlay">
+                                <button class="order-btn" onclick="openOrderModal('Diamond Pendant Necklace')">Order
+                                    Now</button>
+                            </div>
+                        </div>
+                        <h3 class="item-title">Diamond Pendant</h3>
+                        <p class="item-price">From $1,999</p>
+                        <p class="item-description">Solitaire diamond pendant</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ Slide 3: Rings ============ -->
+        <section class="slide" id="rings">
+            <div class="slide-content">
+                <div class="section-header">
+                    <span class="section-number fade-in">02</span>
+                    <h2 class="section-title fade-in">Rings Collection</h2>
+                    <div class="section-divider fade-in">
+                        <span></span><span class="divider-icon">✦</span><span></span>
+                    </div>
+                    <p class="section-subtitle fade-in">Symbols of eternal love and timeless commitment</p>
+                </div>
+                <div class="jewellery-grid">
+                    <div class="jewellery-item fade-in" data-delay="0">
+                        <div class="item-image" style="--accent: #B9F2FF;">
+                            <img src="assets/rings/ring-1.png" alt="Engagement Ring" class="product-img" loading="lazy">
+                            <div class="item-overlay">
+                                <button class="order-btn" onclick="openOrderModal('Diamond Engagement Ring')">Order
+                                    Now</button>
+                            </div>
+                        </div>
+                        <h3 class="item-title">Engagement Ring</h3>
+                        <p class="item-price">From $3,999</p>
+                        <p class="item-description">Brilliant diamond solitaire</p>
+                    </div>
+                    <div class="jewellery-item fade-in" data-delay="1">
+                        <div class="item-image" style="--accent: #FFD700;">
+                            <div class="placeholder-visual ring-2">
+                            <img src="assets/rings/ring-2.png" alt="Wedding Band" class="product-img" loading="lazy">
+                            <div class="item-overlay">
+                                <button class="order-btn" onclick="openOrderModal('Gold Wedding Band')">Order
+                                    Now</button>
+                            </div>
+                            </div>
+                        </div>
+                        <h3 class="item-title">Wedding Band</h3>
+                        <p class="item-price">From $899</p>
+                        <p class="item-description">Classic gold wedding band</p>
+                    </div>
+                    <div class="jewellery-item fade-in" data-delay="2">
+                        <div class="item-image" style="--accent: #E0115F;">
+                            <img src="assets/rings/ring-3.png" alt="Ruby Gemstone" class="product-img" loading="lazy">
+                            <div class="item-overlay">
+                                <button class="order-btn" onclick="openOrderModal('Ruby Gemstone Ring')">Order
+                                    Now</button>
+                            </div>
+                        </div>
+                        <h3 class="item-title">Ruby Gemstone</h3>
+                        <p class="item-price">From $2,799</p>
+                        <p class="item-description">Vibrant ruby with diamond halo</p>
+                    </div>
+                    <div class="jewellery-item fade-in" data-delay="3">
+                        <div class="item-image" style="--accent: #0F52BA;">
+                            <img src="assets/rings/ring-4.png" alt="Sapphire Ring" class="product-img" loading="lazy">
+                            <div class="item-overlay">
+                                <button class="order-btn" onclick="openOrderModal('Sapphire Ring')">Order Now</button>
+                            </div>
+                        </div>
+                        <h3 class="item-title">Sapphire Beauty</h3>
+                        <p class="item-price">From $3,499</p>
+                        <p class="item-description">Deep blue sapphire in gold</p>
+                    </div>
+                    <div class="jewellery-item fade-in" data-delay="4">
+                        <div class="item-image" style="--accent: #D4AF37;">
+                            <img src="assets/rings/ring-5.png" alt="Eternity Band" class="product-img" loading="lazy">
+                            <div class="item-overlay">
+                                <button class="order-btn" onclick="openOrderModal('Eternity Ring')">Order Now</button>
+                            </div>
+                        </div>
+                        <h3 class="item-title">Eternity Band</h3>
+                        <p class="item-price">From $2,199</p>
+                        <p class="item-description">Continuous diamond setting</p>
+                    </div>
+                    <div class="jewellery-item fade-in" data-delay="5">
+                        <div class="item-image" style="--accent: #9966CC;">
+                            <img src="assets/rings/ring-6.png" alt="Cocktail Ring" class="product-img" loading="lazy">
+                            <div class="item-overlay">
+                                <button class="order-btn" onclick="openOrderModal('Cocktail Ring')">Order Now</button>
+                            </div>
+                        </div>
+                        <h3 class="item-title">Cocktail Ring</h3>
+                        <p class="item-price">From $1,699</p>
+                        <p class="item-description">Bold amethyst statement piece</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ Slide 4: Earrings ============ -->
+        <section class="slide" id="earrings">
+            <div class="slide-content">
+                <div class="section-header">
+                    <span class="section-number fade-in">03</span>
+                    <h2 class="section-title fade-in">Earrings Collection</h2>
+                    <div class="section-divider fade-in">
+                        <span></span><span class="divider-icon">✦</span><span></span>
+                    </div>
+                    <p class="section-subtitle fade-in">Sparkle with every movement you make</p>
+                </div>
+                <div class="jewellery-grid">
+                    <div class="jewellery-item fade-in" data-delay="0">
+                        <div class="item-image" style="--accent: #B9F2FF;">
+                            <img src="assets/earrings/earring-1.png" alt="Diamond Studs" class="product-img" loading="lazy">
+                            <div class="item-overlay">
+                                <button class="order-btn" onclick="openOrderModal('Diamond Stud Earrings')">Order
+                                    Now</button>
+                            </div>
+                        </div>
+                        <h3 class="item-title">Diamond Studs</h3>
+                        <p class="item-price">From $1,499</p>
+                        <p class="item-description">Classic brilliant cut diamonds</p>
+                    </div>
+                    <div class="jewellery-item fade-in" data-delay="1">
+                        <div class="item-image" style="--accent: #FFD700;">
+                            <img src="assets/earrings/earring-2.png" alt="Gold Hoops" class="product-img" loading="lazy">
+                            <div class="item-overlay">
+                                <button class="order-btn" onclick="openOrderModal('Gold Hoop Earrings')">Order
+                                    Now</button>
+                            </div>
+                        </div>
+                        <h3 class="item-title">Gold Hoops</h3>
+                        <p class="item-price">From $699</p>
+                        <p class="item-description">Elegant 18K gold hoops</p>
+                    </div>
+                    <div class="jewellery-item fade-in" data-delay="2">
+                        <div class="item-image" style="--accent: #F5F0E8;">
+                            <img src="assets/earrings/earring-3.png" alt="Pearl Drops" class="product-img" loading="lazy">
+                            <div class="item-overlay">
+                                <button class="order-btn" onclick="openOrderModal('Pearl Drop Earrings')">Order
+                                    Now</button>
+                            </div>
+                        </div>
+                        <h3 class="item-title">Pearl Drops</h3>
+                        <p class="item-price">From $899</p>
+                        <p class="item-description">Lustrous pearl drop earrings</p>
+                    </div>
+                    <div class="jewellery-item fade-in" data-delay="3">
+                        <div class="item-image" style="--accent: #50C878;">
+                            <img src="assets/earrings/earring-4.png" alt="Chandelier Earrings" class="product-img" loading="lazy">
+                            <div class="item-overlay">
+                                <button class="order-btn" onclick="openOrderModal('Chandelier Earrings')">Order
+                                    Now</button>
+                            </div>
+                        </div>
+                        <h3 class="item-title">Chandelier</h3>
+                        <p class="item-price">From $2,299</p>
+                        <p class="item-description">Dramatic statement earrings</p>
+                    </div>
+                    <div class="jewellery-item fade-in" data-delay="4">
+                        <div class="item-image" style="--accent: #E0115F;">
+                            <img src="assets/earrings/earring-5.png" alt="Ruby Drops" class="product-img" loading="lazy">
+                            <div class="item-overlay">
+                                <button class="order-btn" onclick="openOrderModal('Ruby Drop Earrings')">Order
+                                    Now</button>
+                            </div>
+                        </div>
+                        <h3 class="item-title">Ruby Drops</h3>
+                        <p class="item-price">From $1,899</p>
+                        <p class="item-description">Precious ruby gemstone earrings</p>
+                    </div>
+                    <div class="jewellery-item fade-in" data-delay="5">
+                        <div class="item-image" style="--accent: #D4AF37;">
+                            <img src="assets/earrings/earring-6.png" alt="Huggie Hoops" class="product-img" loading="lazy">
+                            <div class="item-overlay">
+                                <button class="order-btn" onclick="openOrderModal('Huggie Earrings')">Order Now</button>
+                            </div>
+                        </div>
+                        <h3 class="item-title">Huggie Hoops</h3>
+                        <p class="item-price">From $599</p>
+                        <p class="item-description">Diamond-set huggie hoops</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ Slide 5: Bracelets ============ -->
+        <section class="slide" id="bracelets">
+            <div class="slide-content">
+                <div class="section-header">
+                    <span class="section-number fade-in">04</span>
+                    <h2 class="section-title fade-in">Bracelets Collection</h2>
+                    <div class="section-divider fade-in">
+                        <span></span><span class="divider-icon">✦</span><span></span>
+                    </div>
+                    <p class="section-subtitle fade-in">Adorn your wrists with timeless luxury</p>
+                </div>
+                <div class="jewellery-grid">
+                    <div class="jewellery-item fade-in" data-delay="0">
+                        <div class="item-image" style="--accent: #B9F2FF;">
+                            <img src="assets/bracelets/bracelet-1.png" alt="Tennis Bracelet" class="product-img" loading="lazy">
+                            <div class="item-overlay">
+                                <button class="order-btn" onclick="openOrderModal('Diamond Tennis Bracelet')">Order
+                                    Now</button>
+                            </div>
+                        </div>
+                        <h3 class="item-title">Tennis Bracelet</h3>
+                        <p class="item-price">From $4,999</p>
+                        <p class="item-description">Continuous diamond line bracelet</p>
+                    </div>
+                    <div class="jewellery-item fade-in" data-delay="1">
+                        <div class="item-image" style="--accent: #FFD700;">
+                            <img src="assets/bracelets/bracelet-2.png" alt="Gold Bangle" class="product-img" loading="lazy">
+                            <div class="item-overlay">
+                                <button class="order-btn" onclick="openOrderModal('Gold Bangle')">Order Now</button>
+                            </div>
+                        </div>
+                        <h3 class="item-title">Gold Bangle</h3>
+                        <p class="item-price">From $1,499</p>
+                        <p class="item-description">Elegant solid gold bangle</p>
+                    </div>
+                    <div class="jewellery-item fade-in" data-delay="2">
+                        <div class="item-image" style="--accent: #E8D5B7;">
+                            <img src="assets/bracelets/bracelet-3.png" alt="Charm Bracelet" class="product-img" loading="lazy">
+                            <div class="item-overlay">
+                                <button class="order-btn" onclick="openOrderModal('Charm Bracelet')">Order Now</button>
+                            </div>
+                        </div>
+                        <h3 class="item-title">Charm Bracelet</h3>
+                        <p class="item-price">From $999</p>
+                        <p class="item-description">Personalized charm collection</p>
+                    </div>
+                    <div class="jewellery-item fade-in" data-delay="3">
+                        <div class="item-image" style="--accent: #D4AF37;">
+                            <img src="assets/bracelets/bracelet-4.png" alt="Chain Bracelet" class="product-img" loading="lazy">
+                            <div class="item-overlay">
+                                <button class="order-btn" onclick="openOrderModal('Chain Bracelet')">Order Now</button>
+                            </div>
+                        </div>
+                        <h3 class="item-title">Chain Bracelet</h3>
+                        <p class="item-price">From $799</p>
+                        <p class="item-description">Delicate gold chain bracelet</p>
+                    </div>
+                    <div class="jewellery-item fade-in" data-delay="4">
+                        <div class="item-image" style="--accent: #C0C0C0;">
+                            <img src="assets/bracelets/bracelet-5.png" alt="Cuff Bracelet" class="product-img" loading="lazy">
+                            <div class="item-overlay">
+                                <button class="order-btn" onclick="openOrderModal('Cuff Bracelet')">Order Now</button>
+                            </div>
+                        </div>
+                        <h3 class="item-title">Cuff Bracelet</h3>
+                        <p class="item-price">From $1,199</p>
+                        <p class="item-description">Bold statement silver cuff</p>
+                    </div>
+                    <div class="jewellery-item fade-in" data-delay="5">
+                        <div class="item-image" style="--accent: #F5F0E8;">
+                            <img src="assets/bracelets/bracelet-6.png" alt="Pearl Strand Bracelet" class="product-img" loading="lazy">
+                            <div class="item-overlay">
+                                <button class="order-btn" onclick="openOrderModal('Pearl Bracelet')">Order Now</button>
+                            </div>
+                        </div>
+                        <h3 class="item-title">Pearl Strand</h3>
+                        <p class="item-price">From $1,299</p>
+                        <p class="item-description">Classic pearl bracelet</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ Slide 6: Custom Designs ============ -->
+        <section class="slide" id="custom">
+            <div class="slide-content">
+                <div class="section-header">
+                    <span class="section-number fade-in">05</span>
+                    <h2 class="section-title fade-in">Custom Designs</h2>
+                    <div class="section-divider fade-in">
+                        <span></span><span class="divider-icon">✦</span><span></span>
+                    </div>
+                    <p class="section-subtitle fade-in">Bring your dream jewellery to life — designed exclusively for
+                        you</p>
+                </div>
+
+                <div class="custom-design-wrapper fade-in">
+                    <!-- Left: Visual / Info -->
+                    <div class="custom-info-panel">
+                        <div class="custom-info-card">
+                            <div class="custom-info-icon">✦</div>
+                            <h3>Your Vision, Our Craft</h3>
+                            <p>Share your ideas through sketches, reference photos, or a simple description. Our master
+                                artisans will transform your vision into a one-of-a-kind masterpiece.</p>
+                        </div>
+                        <div class="custom-process">
+                            <div class="process-step">
+                                <div class="step-number">01</div>
+                                <div class="step-info">
+                                    <h4>Share Your Idea</h4>
+                                    <p>Upload reference photos or describe your dream design</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">02</div>
+                                <div class="step-info">
+                                    <h4>Design & Consult</h4>
+                                    <p>Our designers create a custom blueprint for your approval</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">03</div>
+                                <div class="step-info">
+                                    <h4>Handcrafted</h4>
+                                    <p>Master artisans bring your dream piece to life</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Form -->
+                    <div class="custom-form-panel">
+                        <form id="customDesignForm" class="custom-design-form">
+                            <!-- Photo Upload Area -->
+                            <div class="upload-zone" id="uploadZone">
+                                <div class="upload-icon">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M24 32V16M24 16L18 22M24 16L30 22" stroke="#D4AF37" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M8 32L8 36C8 38.2091 9.79086 40 12 40L36 40C38.2091 40 40 38.2091 40 36V32"
+                                            stroke="#D4AF37" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <p class="upload-title">Upload Reference Images</p>
+                                <p class="upload-subtitle">Drag & drop or <span class="upload-browse">browse
+                                        files</span></p>
+                                <p class="upload-hint">JPG, PNG, WEBP up to 10MB each • Max 5 files</p>
+                                <input type="file" id="customFileInput" multiple accept="image/*" hidden>
+                            </div>
+                            <div class="upload-preview" id="uploadPreview"></div>
+
+                            <!-- Design Details -->
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="customName">Your Name *</label>
+                                    <input type="text" id="customName" placeholder="Enter your full name" required>
+                                    <span class="error-message" id="customNameError"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="customContact">Phone / Email *</label>
+                                    <input type="text" id="customContact" placeholder="+94 XX XXX XXXX or email"
+                                        required>
+                                    <span class="error-message" id="customContactError"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="jewelleryType">Jewellery Type *</label>
+                                    <select id="jewelleryType" required>
+                                        <option value="" disabled selected>Select type</option>
+                                        <option value="necklace">Necklace</option>
+                                        <option value="ring">Ring</option>
+                                        <option value="earrings">Earrings</option>
+                                        <option value="bracelet">Bracelet</option>
+                                        <option value="pendant">Pendant</option>
+                                        <option value="brooch">Brooch</option>
+                                        <option value="anklet">Anklet</option>
+                                        <option value="set">Jewellery Set</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="metalPreference">Metal Preference</label>
+                                    <select id="metalPreference">
+                                        <option value="" disabled selected>Select metal</option>
+                                        <option value="gold-24k">24K Gold</option>
+                                        <option value="gold-22k">22K Gold</option>
+                                        <option value="gold-18k">18K Gold</option>
+                                        <option value="white-gold">White Gold</option>
+                                        <option value="rose-gold">Rose Gold</option>
+                                        <option value="platinum">Platinum</option>
+                                        <option value="silver">Sterling Silver</option>
+                                        <option value="mixed">Mixed Metals</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="gemstoneChoice">Gemstone Preference</label>
+                                    <select id="gemstoneChoice">
+                                        <option value="" disabled selected>Select gemstone</option>
+                                        <option value="diamond">Diamond</option>
+                                        <option value="ruby">Ruby</option>
+                                        <option value="emerald">Emerald</option>
+                                        <option value="sapphire">Sapphire</option>
+                                        <option value="pearl">Pearl</option>
+                                        <option value="amethyst">Amethyst</option>
+                                        <option value="topaz">Topaz</option>
+                                        <option value="none">No Gemstone</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="budgetRange">Budget Range</label>
+                                    <select id="budgetRange">
+                                        <option value="" disabled selected>Select budget</option>
+                                        <option value="under-500">Under $500</option>
+                                        <option value="500-1000">$500 — $1,000</option>
+                                        <option value="1000-2500">$1,000 — $2,500</option>
+                                        <option value="2500-5000">$2,500 — $5,000</option>
+                                        <option value="5000-10000">$5,000 — $10,000</option>
+                                        <option value="10000+">$10,000+</option>
+                                        <option value="flexible">Flexible</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="designDescription">Describe Your Vision *</label>
+                                <textarea id="designDescription" rows="4"
+                                    placeholder="Tell us about your dream design — style, size, inscriptions, special details, inspiration..."
+                                    required></textarea>
+                                <span class="error-message" id="designDescError"></span>
+                            </div>
+
+                            <button type="submit" class="submit-button" id="customSubmitBtn">
+                                <span class="btn-text">Submit Custom Request ✦</span>
+                            </button>
+                        </form>
+
+                        <div class="success-message" id="customSuccessMessage">
+                            <div class="success-icon">✓</div>
+                            <h3>Request Submitted!</h3>
+                            <p>Our design team will review your request and contact you within 48 hours with a
+                                consultation plan.</p>
+                            <button class="cta-button primary" onclick="resetCustomForm()"><span>Submit
+                                    Another</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ Slide 7: Contact ============ -->
+        <section class="slide" id="contact">
+            <div class="slide-content">
+                <div class="contact-content fade-in">
+                    <span class="section-number">06</span>
+                    <h2 class="section-title">Visit Us</h2>
+                    <div class="section-divider">
+                        <span></span><span class="divider-icon">✦</span><span></span>
+                    </div>
+                    <p class="section-subtitle">Experience luxury in person at our showroom</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <h3>Location</h3>
+                            <p>123 Heritage Street<br>Colombo, Sri Lanka</p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">🕐</div>
+                            <h3>Hours</h3>
+                            <p>Monday - Saturday<br>10:00 AM - 7:00 PM</p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <h3>Contact</h3>
+                            <p>+94 11 234 5678<br>info@pkheritage.lk</p>
+                        </div>
+                    </div>
+                    <div class="contact-cta">
+                        <button class="cta-button primary" onclick="openOrderModal('General Inquiry')">
+                            <span>Get in Touch</span>
+                        </button>
+                    </div>
+                    <div class="footer-text">
+                        <p>© 2026 PK Heritage Jewellery. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- ============ Order Form Modal ============ -->
+    <div class="modal" id="orderModal">
+        <div class="modal-overlay" onclick="closeOrderModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeOrderModal()">&times;</button>
+            <div class="modal-header">
+                <div class="modal-icon">✦</div>
+                <h2 class="modal-title">Place Your Order</h2>
+                <p class="modal-subtitle">Fill in your details and we'll contact you shortly</p>
+            </div>
+
+            <form id="orderForm" class="order-form">
+                <div class="form-group">
+                    <label for="customerName">Full Name *</label>
+                    <input type="text" id="customerName" name="customerName" placeholder="Enter your full name"
+                        required>
+                    <span class="error-message" id="nameError"></span>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="customerEmail">Email Address *</label>
+                        <input type="email" id="customerEmail" name="customerEmail" placeholder="you@email.com"
+                            required>
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="customerPhone">Phone Number *</label>
+                        <input type="tel" id="customerPhone" name="customerPhone" placeholder="+94 XX XXX XXXX"
+                            required>
+                        <span class="error-message" id="phoneError"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="itemName">Item / Category *</label>
+                    <input type="text" id="itemName" name="itemName" readonly required>
+                </div>
+
+                <div class="form-group">
+                    <label for="specialRequests">Special Requests</label>
+                    <textarea id="specialRequests" name="specialRequests" rows="3"
+                        placeholder="Any specific requirements, size, engraving, etc..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-button" id="submitBtn">
+                    <span class="btn-text">Submit Order</span>
+                    <span class="btn-loader"></span>
+                </button>
+            </form>
+
+            <div class="success-message" id="successMessage">
+                <div class="success-icon">✓</div>
+                <h3>Order Submitted Successfully!</h3>
+                <p>Thank you for choosing PK Heritage Jewellery.<br>We'll contact you within 24 hours.</p>
+                <button class="cta-button primary" onclick="closeOrderModal()"><span>Close</span></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
